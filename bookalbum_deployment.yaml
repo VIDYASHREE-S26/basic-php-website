@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bookalbum
+  name: bookalbum_1
   labels:
-    app: bookalbum
+    app: bookalbum_1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bookalbum
+      app: bookalbum_1
   template:
     metadata:
       labels:
-        app: bookalbum
+        app: bookalbum_1
     spec:
       containers:
-      - name: bookalbum
+      - name: bookalbum_1
         image: sreedocker123/bookmoviealbum:latest
         ports:
         - containerPort: 80
